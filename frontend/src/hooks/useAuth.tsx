@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const register = async (data: RegisterRequest) => {
     try {
-      const user = await authApi.register(data);
+      const _user = await authApi.register(data);
       await login({ username: data.username, password: data.password });
     } catch (error) {
       throw error;

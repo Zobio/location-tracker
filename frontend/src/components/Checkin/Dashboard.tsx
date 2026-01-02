@@ -5,8 +5,8 @@ import { CheckinButton } from './CheckinButton';
 
 export const Dashboard = () => {
   const navigate = useNavigate();
-  const { logout, user } = useAuth();
-  const [refreshKey, setRefreshKey] = useState(0);
+  const { logout } = useAuth();
+  const [, setRefreshKey] = useState(0);
 
   const handleLogout = () => {
     logout();
