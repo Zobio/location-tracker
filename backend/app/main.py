@@ -16,7 +16,7 @@ app = FastAPI(
 origins = [
     "http://localhost:5173",
     "http://localhost:3000",
-    "https://location-tracker-two-vert.vercel.app",
+    "https://*.vercel.app",
     # 本番環境のフロントエンドURLをここに追加
     # 例: "https://location-tracker.vercel.app",
     # "https://*.vercel.app",  # Vercelのプレビューデプロイ用
